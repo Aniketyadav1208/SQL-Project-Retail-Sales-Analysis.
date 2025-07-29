@@ -225,6 +225,6 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 This project is part of my portfolio to showcase data analysis using SQL.
 
 - **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/aniket-yadav-/)
-- **Gmail**: [Connect with me professionally](andyyadav12@gmail.com)
+- **Gmail**: [Connect with me professionally](https://mail.google.com/mail/u/4/#inbox)
 
 Thank you for your support, and I look forward to connecting with you!
