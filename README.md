@@ -199,9 +199,9 @@ GROUP BY shift
 ## Findings
 
 - **Customer Demographics**: Customers span a wide age range, with both genders well represented in the dataset.
-- **Category Insights**: Clothing and Beauty emerged as top-selling categories based on total sales.
+- **Category Insights**: Electronic and Clothing emerged as top-selling categories based on total sales.
 - **High-Value Orders**: Multiple transactions exceeded ₹1000, indicating strong premium product demand.
-- **Peak Sales Shift**: The Afternoon shift (12 PM–5 PM) recorded the highest number of sales.
+- **Peak Sales Shift**: The Evening shift (after 17) recorded the highest number of sales.
 - **Top Customers**: A few loyal customers generated the highest sales volume, useful for targeted marketing.
 - **Monthly Trends**: Sales performance varied monthly, with clear best-selling months identified for each year. 
 
