@@ -40,8 +40,24 @@ CREATE TABLE retail_sales
     total_sale FLOAT
 );
 ```
+### 2. Exploratory Data Analysis (EDA)
 
-### 2. Data Cleaning
+- **Total Records**: Calculate the number of transactions recorded in the dataset.
+- **Unique Customers**: Determine how many distinct customers made purchases.
+- **Product Categories**: List all the unique product categories available.
+- **Gender Distribution**: Analyze how many transactions were made by each gender.
+- **Age Range**: Identify the minimum and maximum age of customers in the dataset.
+- **Category-wise Sales**: Calculate total sales revenue for each product category.
+
+```sql
+SELECT COUNT(*) FROM retail_sales;
+SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
+SELECT DISTINCT category FROM retail_sales;
+SELECT gender, COUNT(*) AS count FROM retail_sales GROUP BY gender;
+SELECT MIN(age) AS youngest, MAX(age) AS oldest FROM retail_sales;
+SELECT category, SUM(total_sale) AS total_sales FROM retail_sales GROUP BY category;
+```
+### 3. Data Cleaning
 
 - **Null Value Check**: Check for any null values in the dataset.
 - **Delete Null Value**: Delete records with missing data.
@@ -58,23 +74,6 @@ WHERE
     sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
     gender IS NULL OR age IS NULL OR category IS NULL OR 
     quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
-```
-### 3. Exploratory Data Analysis (EDA)
-
-- **Total Records**: Calculate the number of transactions recorded in the dataset.
-- **Unique Customers**: Determine how many distinct customers made purchases.
-- **Product Categories**: List all the unique product categories available.
-- **Gender Distribution**: Analyze how many transactions were made by each gender.
-- **Age Range**: Identify the minimum and maximum age of customers in the dataset.
-- **Category-wise Sales**: Calculate total sales revenue for each product category.
-
-```sql
-SELECT COUNT(*) FROM retail_sales;
-SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
-SELECT DISTINCT category FROM retail_sales;
-SELECT gender, COUNT(*) AS count FROM retail_sales GROUP BY gender;
-SELECT MIN(age) AS youngest, MAX(age) AS oldest FROM retail_sales;
-SELECT category, SUM(total_sale) AS total_sales FROM retail_sales GROUP BY category;
 ```
 ### 4. Data Analysis & Findings
 
